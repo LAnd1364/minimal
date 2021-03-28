@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Minimal silver</title>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+   <header class="header" id="home">
+      <div class="container">
+         <div class="header__inner">
+            <div class="header__logo-box">
+               <a class="logo__link" href="#home">
+                  <img class="logo" src="images/logo.svg" alt="логотип">
+               </a>
+            </div>
+            <div class="phone">
+               <a class="phone__num" href="tel:+380800330150">+380800330150</a>
+               <a class="phone__text" href="#callback">ОБРАТНЫЙ ЗВОНОК</a>
+            </div>
+         </div>
+      </div>
+   </header>   
+
+   <main class="main">
+      <div class="up-wrap">
+         <button class="up" id="up" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>         
+            <svg xmlns="http://www.w3.org/2000/svg" width="27pt" height="27pt" viewBox="0 0 27 27" version="1.1">
+               <path fill="#353535" fill-rule="evenodd" d="M 0.980469 14.890625 L 13.320312 2.558594 L 25.65625 14.890625 C 25.886719 15.113281 26.253906 15.109375 26.476562 14.878906 C 26.691406 14.652344 26.691406 14.296875 26.476562 14.070312 L 13.726562 1.328125 C 13.503906 1.101562 13.136719 1.101562 12.910156 1.328125 L 0.164062 14.070312 C -0.0585938 14.304688 -0.0546875 14.671875 0.175781 14.890625 C 0.398438 15.109375 0.757812 15.109375 0.980469 14.890625 Z M 0.980469 14.890625 "/>
+               <path fill="#353535" fill-rule="evenodd" d="M 13.730469 11.753906 C 13.507812 11.527344 13.136719 11.527344 12.910156 11.753906 L 0.164062 24.496094 C -0.0585938 24.730469 -0.0507812 25.097656 0.179688 25.316406 C 0.398438 25.539062 0.757812 25.539062 0.980469 25.316406 L 13.320312 12.984375 L 25.65625 25.320312 C 25.886719 25.542969 26.253906 25.539062 26.476562 25.308594 C 26.691406 25.078125 26.691406 24.726562 26.476562 24.5 Z M 13.730469 11.753906 "/>
+               <path fill="#353535" fill-rule="evenodd" d="M 26.066406 15.058594 C 25.914062 15.058594 25.765625 15 25.65625 14.890625 L 13.320312 2.558594 L 0.980469 14.890625 C 0.753906 15.113281 0.386719 15.109375 0.164062 14.878906 C -0.0507812 14.652344 -0.0507812 14.296875 0.164062 14.070312 L 12.910156 1.328125 C 13.136719 1.101562 13.507812 1.101562 13.730469 1.328125 L 26.476562 14.070312 C 26.703125 14.296875 26.703125 14.664062 26.476562 14.890625 C 26.367188 15 26.21875 15.058594 26.066406 15.058594 Z M 26.066406 15.058594 "/>
+               <path fill="#353535" fill-rule="evenodd" d="M 26.066406 25.488281 C 25.914062 25.488281 25.765625 25.429688 25.65625 25.320312 L 13.320312 12.984375 L 0.980469 25.320312 C 0.753906 25.542969 0.386719 25.539062 0.164062 25.308594 C -0.0546875 25.078125 -0.0546875 24.726562 0.164062 24.5 L 12.910156 11.757812 C 13.136719 11.527344 13.507812 11.527344 13.730469 11.757812 L 26.476562 24.5 C 26.703125 24.726562 26.703125 25.09375 26.476562 25.320312 C 26.367188 25.429688 26.21875 25.488281 26.066406 25.488281 Z M 26.066406 25.488281 "/>
+            </svg>
+         </button>
+      </div>
+      <section class="geometry">
+         <div class="container">
+            <div class="geometry__wrap">
+               <nav class="menu">
+                  <button class="menu__btn" id="menu-btn">
+                     <span class="menu__btn-line"></span>
+                     <span class="menu__btn-line"></span>
+                     <span class="menu__btn-line"></span>
+                  </button>
+                  <ul class="menu__list">
+                     <li class="menu__item">
+                        <a class="menu__item-link" href="#about">О НАС</a>
+                     </li>
+                     <li class="menu__item">
+                        <a class="menu__item-link" href="#new">НОВИНКА</a>
+                     </li>
+                     <li class="menu__item">
+                        <a class="menu__item-link" href="#collection">КОЛЛЕКЦИЯ</a>
+                     </li>
+                     <li class="menu__item">
+                        <a class="menu__item-link" href="#action">Акция</a>
+                     </li>
+                     <li class="menu__item">
+                        <a class="menu__item-link" href="#contacts">КОНТАКТЫ</a>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="geometry__inner">
+                  <div class="geometry__content">
+                     <h2 class="geometry__title title">Ювелирные украшения коллекции “Геометрия”</h2>
+                     <p class="geometry__content-text">
+                        При покупке украшения из коллекции “Геометрия” скидка на следующую покупку 20%
+                     </p>
+                     <img class="geometry__content-img" src="images/geometry-content.jpg" alt="Украшение коллекции 'Геометрия'">
+                  </div>
+                  <p class="geometry__bg-title">GEOMETRY</p>
+                  <div class="geometry__aside">
+                     <img class="geometry__aside-img" src="images/geometry-aside.jpg" alt="">
+                     <a class="geometry__aside-link buy-link" href="#">ВЫБРАТЬ УКРАШЕНИЕ</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="about" id="about">
+         <div class="container">
+            <div class="about__wrap">
+               <div class="about__inner">
+               <div class="about__content">
+                  <h2 class="about__title title">О нас</h2>
+                  <div class="about__desc">
+                     <p class="about__text">
+                        Следуя зову сердца, решили показать красоту в простоте и донести каждой девушке, что она <span>прекрасна</span>.
+                     </p>
+                     <p class="about__text">
+                        Все серебро в интернет-магазине «Minimal Silver» имеет 925 пробу.
+                     </p>
+                     <p class="about__text">
+                        Это означает, что в 1000 массовых частях сплава содержится 92,5 % чистого серебра и только 7,5 % примесей других металлов. 
+                     </p>
+                     <p class="about__text">
+                        Такой сплав отличается высокими антикоррозийными свойствами, что обеспечивает красивый вид и долгий срок службы изделия.
+                     </p>
+                     <a class="about__link more" href="#">Читать далее...</a>
+                  </div>
+               </div>
+                  <ul class="about__photos">
+                     <li class="about__photo">
+                        <img class="about__img" src="images/about/1.jpg" alt="">
+                     </li>
+                     <li class="about__photo">
+                        <img class="about__img" src="images/about/2.jpg" alt="">
+                     </li>
+                     <li class="about__photo">
+                        <img class="about__img" src="images/about/3.jpg" alt="">
+                     </li>
+                     <li class="about__photo">
+                        <img class="about__img" src="images/about/4.jpg" alt="">
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="new" id="new">
+         <div class="container">
+            <div class="new__wrap">
+               <div class="new__inner">
+                  <h2 class="new__title title">Новинка</h2>
+                  <div class="new__content">
+                     <div class="new__items-det">
+                        <div class="new__item-det new__item-det--active" id="new__item-det-1">
+                           <div class="new__item-slider">
+                              <div class="new__item-slider-l">
+                                 <img class="new__item-slider-l-img" src="images/new/1a.jpg" alt="Новинка">
+                                 <img class="new__item-slider-l-img" src="images/new/1b.jpg" alt="Новинка">
+                              </div>
+                              <div class="new__item-slider-s">
+                                 <img class="new__item-slider-s-img" src="images/new/1a.jpg" alt="Новинка">
+                                 <img class="new__item-slider-s-img" src="images/new/1b.jpg" alt="Новинка">
+                              </div>
+                           </div>
+                           <div class="new__item-det-inner">
+                              <div class="new__item-content">
+                                 <h4 class="new__item-content-title new__item-title">Браслет Забвение</h4>
+                                 <div class="new__item-content-desc">
+                                    <h6 class="new__item-content-desc-title">Характеристики</h6>
+                                    <ul class="new__item-content-desc-list">
+                                       <li class="desc-item">
+                                          <span class="desc-item-attr">Вес</span>
+                                          <div class="new__item-content-desc-item-val"><span>3.06</span> g</div>
+                                       </li>
+                                       <li class="desc-item">
+                                          <span class="desc-item-attr">Проба</span>
+                                          <span class="new__item-content-desc-item-val">925</span>
+                                       </li>
+                                       <li class="desc-item">
+                                          <span class="desc-item-attr">Покрытие</span>
+                                          <span class="new__item-content-desc-item-val">Родий</span>
+                                       </li>
+                                       <li class="desc-item">
+                                          <span class="desc-item-attr">Гарантия</span>
+                                          <div class="new__item-content-desc-item-val"><span>2</span> года</div>
+                                       </li>
+                                       <li class="desc-item desc-item--price">
+                                          <span class="desc-item-attr">Цена</span>
+                                          <div class="new__item-content-desc-item-val"><span>630</span> грн.</div>
+                                       </li>
+                                    </ul>
+                                    <a class="new__item-content-desc-item-link buy-link" href="#">КУПИТЬ</a>
+                                 </div>
+                              </div>
+                              <img class="new__bg-text" src="images/new-bg-text.svg" alt="new">
+                           </div>
+                        </div>
+                        <div class="new__item-det" id="new__item-det-2">
+                           <div class="new__item-slider">
+                              <div class="new__item-slider-l">
+                                 <img class="new__item-slider-l-img" src="images/new/2a.jpg" alt="Новинка">
+                                 <img class="new__item-slider-l-img" src="images/new/2b.jpg" style="opacity: .87" alt="Новинка">
+                              </div>
+                              <div class="new__item-slider-s">
+                                 <img class="new__item-slider-s-img" src="images/new/2a.jpg" alt="Новинка">
+                                 <img class="new__item-slider-s-img" src="images/new/2b.jpg" style="opacity: .87" alt="Новинка">
+                              </div>
+                           </div>
+                           <div class="new__item-det-inner">
+                              <div class="new__item-content">
+                                 <h4 class="new__item-content-title new__item-title">Серьги Безупречность</h4>
+                                 <div class="new__item-content-desc">
+                                    <h6 class="new__item-content-desc-title">Характеристики</h6>
+                                    <ul class="new__item-content-desc-list">
+                                       <li class="desc-item">
+                                          <span class="desc-item-attr">Вес</span>
+                                          <div class="new__item-content-desc-item-val"><span>3.06</span> g</div>
+                                       </li>
+                                       <li class="desc-item">
+                                          <span class="desc-item-attr">Проба</span>
+                                          <span class="new__item-content-desc-item-val">925</span>
+                                       </li>
+                                       <li class="desc-item">
+                                          <span class="desc-item-attr">Покрытие</span>
+                                          <span class="new__item-content-desc-item-val">Родий</span>
+                                       </li>
+                                       <li class="desc-item">
+                                          <span class="desc-item-attr">Гарантия</span>
+                                          <div class="new__item-content-desc-item-val"><span>2</span> года</div>
+                                       </li>
+                                       <li class="desc-item desc-item--price">
+                                          <span class="desc-item-attr">Цена</span>
+                                          <div class="new__item-content-desc-item-val"><span>630</span> грн.</div>
+                                       </li>
+                                    </ul>
+                                    <a class="new__item-content-desc-item-link buy-link" href="#">КУПИТЬ</a>
+                                 </div>
+                              </div>
+                              <img class="new__bg-text" src="images/new-bg-text.svg" alt="new">
+                           </div>
+                        </div>
+                        <div class="new__item-det" id="new__item-det-3">
+                           <div class="new__item-slider">
+                              <div class="new__item-slider-l">
+                                 <img class="new__item-slider-l-img" src="images/new/3a.jpg" alt="Новинка">
+                                 <img class="new__item-slider-l-img" src="images/new/3b.jpg" style="opacity: .77" alt="Новинка">
+                              </div>
+                              <div class="new__item-slider-s">
+                                 <img class="new__item-slider-s-img" src="images/new/3a.jpg" alt="Новинка">
+                                 <img class="new__item-slider-s-img" src="images/new/3b.jpg" style="opacity: .77" alt="Новинка">
+                              </div>
+                           </div>
+                           <div class="new__item-det-inner">
+                              <div class="new__item-content">
+                                 <h4 class="new__item-content-title new__item-title">Кольцо Треугольники</h4>
+                                 <div class="new__item-content-desc">
+                                    <h6 class="new__item-content-desc-title">Характеристики</h6>
+                                    <ul class="new__item-content-desc-list">
+                                       <li class="desc-item">
+                                          <span class="desc-item-attr">Вес</span>
+                                          <div class="new__item-content-desc-item-val"><span>3.06</span> g</div>
+                                       </li>
+                                       <li class="desc-item">
+                                          <span class="desc-item-attr">Проба</span>
+                                          <span class="new__item-content-desc-item-val">925</span>
+                                       </li>
+                                       <li class="desc-item">
+                                          <span class="desc-item-attr">Покрытие</span>
+                                          <span class="new__item-content-desc-item-val">Родий</span>
+                                       </li>
+                                       <li class="desc-item">
+                                          <span class="desc-item-attr">Гарантия</span>
+                                          <div class="new__item-content-desc-item-val"><span>2</span> года</div>
+                                       </li>
+                                       <li class="desc-item desc-item--price">
+                                          <span class="desc-item-attr">Цена</span>
+                                          <div class="new__item-content-desc-item-val"><span>630</span> грн.</div>
+                                       </li>
+                                    </ul>
+                                    <a class="new__item-content-desc-item-link buy-link" href="#">КУПИТЬ</a>
+                                 </div>
+                              </div>
+                              <img class="new__bg-text" src="images/new-bg-text.svg" alt="new">
+                           </div>
+                        </div>
+                     </div>
+                     <ul class="new__list">
+                        <li class="new__item new__item--noact" id="new__item-1">
+                           <img class="new__item-img" src="images/new/1a.jpg" alt="Новинка">
+                           <h4 class="new__item-title">Браслет Забвение</h4>
+                           <a class="new__item-link new__item-link--active more" href="#new__item-det-1" id="new__item-link-1">Узнать больше</a>
+                        </li>
+                        <li class="new__item" id="new__item-2">
+                           <img class="new__item-img" src="images/new/2a.jpg" alt="Новинка">
+                           <h4 class="new__item-title">Серьги Безупречность</h4>
+                           <a class="new__item-link more" href="#new__item-det-2" id="new__item-link-2">Узнать больше</a>
+                        </li>
+                        <li class="new__item" id="new__item-3">
+                           <img class="new__item-img" src="images/new/3a.jpg" alt="Новинка">
+                           <h4 class="new__item-title">Кольцо Треугольники</h4>
+                           <a class="new__item-link more" href="#new__item-det-3" id="new__item-link-3">Узнать больше</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="aside"></div>
+            </div>
+         </div>
+      </section>
+
+      <section class="collection" id="collection">
+         <div class="container">
+            <div class="collection__inner">
+               <h2 class="collection__title title">Коллекция</h2>
+               <div class="collection__categories">
+                  <h3 class="collection__category">
+                     <a class="collection__link collection__link--active" href="#pendants">Подвески</a>
+                  </h3>
+                  <h3 class="collection__category">
+                     <a class="collection__link" href="#earrings">Серьги</a>
+                  </h3>
+                  <h3 class="collection__category">
+                     <a class="collection__link" href="#rings">Кольца</a>
+                  </h3>
+                  <h3 class="collection__category">
+                     <a class="collection__link" href="#bracelets">Браслеты</a>
+                  </h3>
+               </div>
+               <div class="collection-slider collection-slider--active" id="pendants">
+                  <div class="collection-slider__item">
+                     <img class="collection-slider__item-img" src="images/collection/1.jpg" alt="Подвеска">
+                     <div class="collection-slider__item-desc">
+                        <div class="collection-slider__item-desc-inner">
+                           <h4 class="collection-slider__item-desc-title">Подвеска Энтузиазм</h4>
+                           <ul class="collection-slider__item-desc-list">
+                              <li class="collection-slider__item-desc-item desc-item">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Вес</span>
+                                 <div class="collection-slider__item-desc-item-val"><span>2.84</span> g</div>
+                              </li>
+                              <li class="collection-slider__item-desc-item desc-item">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Проба</span>
+                                 <span class="collection-slider__item-desc-item-val">925</span>
+                              </li>
+                              <li class="collection-slider__item-desc-item desc-item">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Гарантия</span>
+                                 <div class="collection-slider__item-desc-item-val"><span>2</span> года</div>
+                              </li>
+                              <li class="collection-slider__item-desc-item collection-slider__item-desc-item--price desc-item desc-item--price">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Цена</span>
+                                 <div class="collection-slider__item-desc-item-val"><span>600</span> грн.</div>
+                              </li>
+                           </ul>
+                           <a class="collection-slider__item-link buy-link" href="#">КУПИТЬ</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="collection-slider__item">
+                     <img class="collection-slider__item-img" src="images/collection/2.jpg" alt="Подвеска">
+                     <div class="collection-slider__item-desc">
+                        <div class="collection-slider__item-desc-inner">
+                           <h4 class="collection-slider__item-desc-title">Подвеска Уравновешенность</h4>
+                           <ul class="collection-slider__item-desc-list">
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Вес</span>
+                              <div class="collection-slider__item-desc-item-val"><span>3.69</span> g</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Проба</span>
+                              <span class="collection-slider__item-desc-item-val">925</span>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Гарантия</span>
+                              <div class="collection-slider__item-desc-item-val"><span>2</span> года</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item collection-slider__item-desc-item--price desc-item desc-item--price">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Цена</span>
+                              <div class="collection-slider__item-desc-item-val"><span>740</span> грн.</div>
+                           </li>
+                           </ul>
+                           <a class="collection-slider__item-link buy-link" href="#">КУПИТЬ</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="collection-slider__item">
+                     <img class="collection-slider__item-img" src="images/collection/3.jpg" alt="Подвеска">
+                     <div class="collection-slider__item-desc">
+                        <div class="collection-slider__item-desc-inner">
+                           <h4 class="collection-slider__item-desc-title">Подвеска Энтузиазм</h4>
+                           <ul class="collection-slider__item-desc-list">
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Вес</span>
+                              <div class="collection-slider__item-desc-item-val"><span>2.84</span> g</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Проба</span>
+                              <span class="collection-slider__item-desc-item-val">925</span>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Гарантия</span>
+                              <div class="collection-slider__item-desc-item-val"><span>2</span> года</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item collection-slider__item-desc-item--price desc-item desc-item--price">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Цена</span>
+                              <div class="collection-slider__item-desc-item-val"><span>600</span> грн.</div>
+                           </li>
+                           </ul>
+                           <a class="collection-slider__item-link buy-link" href="#">КУПИТЬ</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="collection-slider__item">
+                     <img class="collection-slider__item-img" src="images/collection/4.jpg" alt="Подвеска">
+                     <div class="collection-slider__item-desc">
+                        <div class="collection-slider__item-desc-inner">
+                           <h4 class="collection-slider__item-desc-title">Подвеска Уверенность</h4>
+                           <ul class="collection-slider__item-desc-list">
+                              <li class="collection-slider__item-desc-item desc-item">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Вес</span>
+                                 <div class="collection-slider__item-desc-item-val"><span>2.30</span> g</div>
+                              </li>
+                              <li class="collection-slider__item-desc-item desc-item">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Проба</span>
+                                 <span class="collection-slider__item-desc-item-val">925</span>
+                              </li>
+                              <li class="collection-slider__item-desc-item desc-item">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Гарантия</span>
+                                 <div class="collection-slider__item-desc-item-val"><span>2</span> года</div>
+                              </li>
+                              <li class="collection-slider__item-desc-item collection-slider__item-desc-item--price desc-item desc-item--price">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Цена</span>
+                                 <div class="collection-slider__item-desc-item-val"><span>600</span> грн.</div>
+                              </li>
+                           </ul>
+                           <a class="collection-slider__item-link buy-link" href="#">КУПИТЬ</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="collection-slider" id="earrings">
+                  <div class="collection-slider__item">
+                     <img class="collection-slider__item-img" src="images/collection/2.jpg" alt="Подвеска">
+                     <div class="collection-slider__item-desc">
+                        <div class="collection-slider__item-desc-inner">
+                           <h4 class="collection-slider__item-desc-title">Подвеска Энтузиазм</h4>
+                           <ul class="collection-slider__item-desc-list">
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Вес</span>
+                              <div class="collection-slider__item-desc-item-val"><span>2.84</span> g</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Проба</span>
+                              <span class="collection-slider__item-desc-item-val">925</span>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Гарантия</span>
+                              <div class="collection-slider__item-desc-item-val"><span>2</span> года</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item collection-slider__item-desc-item--price desc-item desc-item--price">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Цена</span>
+                              <div class="collection-slider__item-desc-item-val"><span>600</span> грн.</div>
+                           </li>
+                           </ul>
+                           <a class="collection-slider__item-link buy-link" href="#">КУПИТЬ</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="collection-slider__item">
+                     <img class="collection-slider__item-img" src="images/collection/3.jpg" alt="Подвеска">
+                     <div class="collection-slider__item-desc">
+                        <div class="collection-slider__item-desc-inner">
+                           <h4 class="collection-slider__item-desc-title">Подвеска Уравновешенность</h4>
+                           <ul class="collection-slider__item-desc-list">
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Вес</span>
+                              <div class="collection-slider__item-desc-item-val"><span>3.69</span> g</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Проба</span>
+                              <span class="collection-slider__item-desc-item-val">925</span>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Гарантия</span>
+                              <div class="collection-slider__item-desc-item-val"><span>2</span> года</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item collection-slider__item-desc-item--price desc-item desc-item--price">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Цена</span>
+                              <div class="collection-slider__item-desc-item-val"><span>740</span> грн.</div>
+                           </li>
+                           </ul>
+                           <a class="collection-slider__item-link buy-link" href="#">КУПИТЬ</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="collection-slider__item">
+                     <img class="collection-slider__item-img" src="images/collection/4.jpg" alt="Подвеска">
+                     <div class="collection-slider__item-desc">
+                        <div class="collection-slider__item-desc-inner">
+                           <h4 class="collection-slider__item-desc-title">Подвеска Энтузиазм</h4>
+                           <ul class="collection-slider__item-desc-list">
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Вес</span>
+                              <div class="collection-slider__item-desc-item-val"><span>2.84</span> g</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Проба</span>
+                              <span class="collection-slider__item-desc-item-val">925</span>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Гарантия</span>
+                              <div class="collection-slider__item-desc-item-val"><span>2</span> года</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item collection-slider__item-desc-item--price desc-item desc-item--price">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Цена</span>
+                              <div class="collection-slider__item-desc-item-val"><span>600</span> грн.</div>
+                           </li>
+                           </ul>
+                           <a class="collection-slider__item-link buy-link" href="#">КУПИТЬ</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="collection-slider__item">
+                     <img class="collection-slider__item-img" src="images/collection/1.jpg" alt="Подвеска">
+                     <div class="collection-slider__item-desc">
+                        <div class="collection-slider__item-desc-inner">
+                           <h4 class="collection-slider__item-desc-title">Подвеска Уверенность</h4>
+                           <ul class="collection-slider__item-desc-list">
+                              <li class="collection-slider__item-desc-item desc-item">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Вес</span>
+                                 <div class="collection-slider__item-desc-item-val"><span>2.30</span> g</div>
+                              </li>
+                              <li class="collection-slider__item-desc-item desc-item">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Проба</span>
+                                 <span class="collection-slider__item-desc-item-val">925</span>
+                              </li>
+                              <li class="collection-slider__item-desc-item desc-item">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Гарантия</span>
+                                 <div class="collection-slider__item-desc-item-val"><span>2</span> года</div>
+                              </li>
+                              <li class="collection-slider__item-desc-item collection-slider__item-desc-item--price desc-item desc-item--price">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Цена</span>
+                                 <div class="collection-slider__item-desc-item-val"><span>600</span> грн.</div>
+                              </li>
+                           </ul>
+                           <a class="collection-slider__item-link buy-link" href="#">КУПИТЬ</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="collection-slider" id="rings">
+                  <div class="collection-slider__item">
+                     <img class="collection-slider__item-img" src="images/collection/3.jpg" alt="Подвеска">
+                     <div class="collection-slider__item-desc">
+                        <div class="collection-slider__item-desc-inner">
+                           <h4 class="collection-slider__item-desc-title">Подвеска Энтузиазм</h4>
+                           <ul class="collection-slider__item-desc-list">
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Вес</span>
+                              <div class="collection-slider__item-desc-item-val"><span>2.84</span> g</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Проба</span>
+                              <span class="collection-slider__item-desc-item-val">925</span>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Гарантия</span>
+                              <div class="collection-slider__item-desc-item-val"><span>2</span> года</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item collection-slider__item-desc-item--price desc-item desc-item--price">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Цена</span>
+                              <div class="collection-slider__item-desc-item-val"><span>600</span> грн.</div>
+                           </li>
+                           </ul>
+                           <a class="collection-slider__item-link buy-link" href="#">КУПИТЬ</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="collection-slider__item">
+                     <img class="collection-slider__item-img" src="images/collection/4.jpg" alt="Подвеска">
+                     <div class="collection-slider__item-desc">
+                        <div class="collection-slider__item-desc-inner">
+                           <h4 class="collection-slider__item-desc-title">Подвеска Уравновешенность</h4>
+                           <ul class="collection-slider__item-desc-list">
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Вес</span>
+                              <div class="collection-slider__item-desc-item-val"><span>3.69</span> g</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Проба</span>
+                              <span class="collection-slider__item-desc-item-val">925</span>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Гарантия</span>
+                              <div class="collection-slider__item-desc-item-val"><span>2</span> года</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item collection-slider__item-desc-item--price desc-item desc-item--price">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Цена</span>
+                              <div class="collection-slider__item-desc-item-val"><span>740</span> грн.</div>
+                           </li>
+                           </ul>
+                           <a class="collection-slider__item-link buy-link" href="#">КУПИТЬ</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="collection-slider__item">
+                     <img class="collection-slider__item-img" src="images/collection/1.jpg" alt="Подвеска">
+                     <div class="collection-slider__item-desc">
+                        <div class="collection-slider__item-desc-inner">
+                           <h4 class="collection-slider__item-desc-title">Подвеска Энтузиазм</h4>
+                           <ul class="collection-slider__item-desc-list">
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Вес</span>
+                              <div class="collection-slider__item-desc-item-val"><span>2.84</span> g</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Проба</span>
+                              <span class="collection-slider__item-desc-item-val">925</span>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Гарантия</span>
+                              <div class="collection-slider__item-desc-item-val"><span>2</span> года</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item collection-slider__item-desc-item--price desc-item desc-item--price">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Цена</span>
+                              <div class="collection-slider__item-desc-item-val"><span>600</span> грн.</div>
+                           </li>
+                           </ul>
+                           <a class="collection-slider__item-link buy-link" href="#">КУПИТЬ</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="collection-slider__item">
+                     <img class="collection-slider__item-img" src="images/collection/2.jpg" alt="Подвеска">
+                     <div class="collection-slider__item-desc">
+                        <div class="collection-slider__item-desc-inner">
+                           <h4 class="collection-slider__item-desc-title">Подвеска Уверенность</h4>
+                           <ul class="collection-slider__item-desc-list">
+                              <li class="collection-slider__item-desc-item desc-item">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Вес</span>
+                                 <div class="collection-slider__item-desc-item-val"><span>2.30</span> g</div>
+                              </li>
+                              <li class="collection-slider__item-desc-item desc-item">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Проба</span>
+                                 <span class="collection-slider__item-desc-item-val">925</span>
+                              </li>
+                              <li class="collection-slider__item-desc-item desc-item">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Гарантия</span>
+                                 <div class="collection-slider__item-desc-item-val"><span>2</span> года</div>
+                              </li>
+                              <li class="collection-slider__item-desc-item collection-slider__item-desc-item--price desc-item desc-item--price">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Цена</span>
+                                 <div class="collection-slider__item-desc-item-val"><span>600</span> грн.</div>
+                              </li>
+                           </ul>
+                           <a class="collection-slider__item-link buy-link" href="#">КУПИТЬ</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="collection-slider" id="bracelets">
+                  <div class="collection-slider__item">
+                     <img class="collection-slider__item-img" src="images/collection/4.jpg" alt="Подвеска">
+                     <div class="collection-slider__item-desc">
+                        <div class="collection-slider__item-desc-inner">
+                           <h4 class="collection-slider__item-desc-title">Подвеска Энтузиазм</h4>
+                           <ul class="collection-slider__item-desc-list">
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Вес</span>
+                              <div class="collection-slider__item-desc-item-val"><span>2.84</span> g</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Проба</span>
+                              <span class="collection-slider__item-desc-item-val">925</span>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Гарантия</span>
+                              <div class="collection-slider__item-desc-item-val"><span>2</span> года</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item collection-slider__item-desc-item--price desc-item desc-item--price">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Цена</span>
+                              <div class="collection-slider__item-desc-item-val"><span>600</span> грн.</div>
+                           </li>
+                           </ul>
+                           <a class="collection-slider__item-link buy-link" href="#">КУПИТЬ</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="collection-slider__item">
+                     <img class="collection-slider__item-img" src="images/collection/1.jpg" alt="Подвеска">
+                     <div class="collection-slider__item-desc">
+                        <div class="collection-slider__item-desc-inner">
+                           <h4 class="collection-slider__item-desc-title">Подвеска Уравновешенность</h4>
+                           <ul class="collection-slider__item-desc-list">
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Вес</span>
+                              <div class="collection-slider__item-desc-item-val"><span>3.69</span> g</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Проба</span>
+                              <span class="collection-slider__item-desc-item-val">925</span>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Гарантия</span>
+                              <div class="collection-slider__item-desc-item-val"><span>2</span> года</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item collection-slider__item-desc-item--price desc-item desc-item--price">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Цена</span>
+                              <div class="collection-slider__item-desc-item-val"><span>740</span> грн.</div>
+                           </li>
+                           </ul>
+                           <a class="collection-slider__item-link buy-link" href="#">КУПИТЬ</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="collection-slider__item">
+                     <img class="collection-slider__item-img" src="images/collection/2.jpg" alt="Подвеска">
+                     <div class="collection-slider__item-desc">
+                        <div class="collection-slider__item-desc-inner">
+                           <h4 class="collection-slider__item-desc-title">Подвеска Энтузиазм</h4>
+                           <ul class="collection-slider__item-desc-list">
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Вес</span>
+                              <div class="collection-slider__item-desc-item-val"><span>2.84</span> g</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Проба</span>
+                              <span class="collection-slider__item-desc-item-val">925</span>
+                           </li>
+                           <li class="collection-slider__item-desc-item desc-item">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Гарантия</span>
+                              <div class="collection-slider__item-desc-item-val"><span>2</span> года</div>
+                           </li>
+                           <li class="collection-slider__item-desc-item collection-slider__item-desc-item--price desc-item desc-item--price">
+                              <span class="collection-slider__item-desc-item-attr desc-item-attr">Цена</span>
+                              <div class="collection-slider__item-desc-item-val"><span>600</span> грн.</div>
+                           </li>
+                           </ul>
+                           <a class="collection-slider__item-link buy-link" href="#">КУПИТЬ</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="collection-slider__item">
+                     <img class="collection-slider__item-img" src="images/collection/3.jpg" alt="Подвеска">
+                     <div class="collection-slider__item-desc">
+                        <div class="collection-slider__item-desc-inner">
+                           <h4 class="collection-slider__item-desc-title">Подвеска Уверенность</h4>
+                           <ul class="collection-slider__item-desc-list">
+                              <li class="collection-slider__item-desc-item desc-item">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Вес</span>
+                                 <div class="collection-slider__item-desc-item-val"><span>2.30</span> g</div>
+                              </li>
+                              <li class="collection-slider__item-desc-item desc-item">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Проба</span>
+                                 <span class="collection-slider__item-desc-item-val">925</span>
+                              </li>
+                              <li class="collection-slider__item-desc-item desc-item">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Гарантия</span>
+                                 <div class="collection-slider__item-desc-item-val"><span>2</span> года</div>
+                              </li>
+                              <li class="collection-slider__item-desc-item collection-slider__item-desc-item--price desc-item desc-item--price">
+                                 <span class="collection-slider__item-desc-item-attr desc-item-attr">Цена</span>
+                                 <div class="collection-slider__item-desc-item-val"><span>600</span> грн.</div>
+                              </li>
+                           </ul>
+                           <a class="collection-slider__item-link buy-link" href="#">КУПИТЬ</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="action" id="action">
+         <div class="container">
+            <div class="action__wrap">
+               <div class="action__inner">
+                  <h2 class="action__title title">Акция</h2>
+                  <div class="action__list-wrap">
+                     <ul class="action__list">
+                        <li class="action__item">
+                           <a class="action__item-link" href="#">
+                              <img class="action__item-img" src="images/action/1.jpg" alt="Акционное предложение">
+                           </a>
+                        </li>
+                        <li class="action__item">
+                           <a class="action__item-link" href="#">
+                              <img class="action__item-img" src="images/action/2.jpg" alt="Акционное предложение">
+                           </a>
+                        </li>
+                        <li class="action__item" data-aos="shift-left" id="action__item">
+                           <a class="action__item-link" href="#">
+                              <img class="action__item-img" src="images/action/3.jpg" alt="Акционное предложение">
+                           </a>
+                        </li>
+                        <li class="action__item" data-aos="shift-right">
+                           <a class="action__item-link" href="#">
+                              <img class="action__item-img" src="images/action/4.jpg" alt="Акционное предложение">
+                           </a>
+                        </li>
+                        <li class="action__item">
+                           <a class="action__item-link" href="#">
+                              <img class="action__item-img" src="images/action/5.jpg" alt="Акционное предложение">
+                           </a>
+                        </li>
+                        <li class="action__item">
+                           <a class="action__item-link" href="#">
+                              <img class="action__item-img" src="images/action/6.jpg" alt="Акционное предложение">
+                           </a>
+                        </li>
+                     </ul>
+                     <div class="action__link-box" data-aos="appear" data-aos-anchor="#action__item" data-aos-delay="200">
+                        <div class="action__link-box-inner">
+                           <p class="action__link-box-text">
+                              Купи украшение - получай скидку на следующую покупку 20%
+                           </p>
+                           <a class="action__link buy-link" href="#">Выбрать украшение</a>
+                        </div>   
+                     </div>
+                  </div>
+               </div>
+               <div class="aside"></div>
+            </div>
+         </div>
+      </section>
+
+   </main>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__wrap">
+            <div class="footer__inner">
+               <a class="logo__link" href="#home">
+                  <img class="logo" src="images/logo.svg" alt="логотип">
+               </a>
+               <nav class="footer__menu">
+                  <ul class="footer__menu-list">
+                     <li class="footer__menu-item">
+                        <a class="footer__menu-item-link" href="#about">О нас</a>
+                     </li>
+                     <li class="footer__menu-item">
+                        <a class="footer__menu-item-link" href="#new">Новинка</a>
+                     </li>
+                     <li class="footer__menu-item">
+                        <a class="footer__menu-item-link" href="#collection">Коллекция</a>
+                     </li>
+                     <li class="footer__menu-item">
+                        <a class="footer__menu-item-link" href="#action">Акция</a>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="footer__shop">
+                  <h5 class="footer__shop-title footer__item-title">Магазин</h5>
+                  <ul class="footer__shop-categories">
+                     <li class="footer__shop-category">
+                        <a class="footer__shop-category-link" href="#bracelets">Браслеты</a>
+                     </li>
+                     <li class="footer__shop-category">
+                        <a class="footer__shop-category-link" href="#earrings">Серьги</a>
+                     </li>
+                     <li class="footer__shop-category">
+                        <a class="footer__shop-category-link" href="#rings">Кольца</a>
+                     </li>
+                     <li class="footer__shop-category">
+                        <a class="footer__shop-category-link" href="#pendants">Подвески</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="footer__contacts" id="contacts">
+                  <div class="footer__contacts-box">
+                     <h5 class="footer__contacts-title footer__item-title">Контакты</h5>
+                     <div class="footer__contacts-phone">
+                        <span class="footer__contacts-phone-title">Телефон:</span>
+                        <div class="phone">
+                           <a class="phone__num" href="tel:+380800330150">+380800330150</a>
+                           <a class="phone__text" href="#">ОБРАТНЫЙ ЗВОНОК</a>
+                        </div>
+                     </div>
+                     <div class="footer__contacts-email-box">
+                        <span class="footer__contacts-email-title">E-mail:</span>
+                        <a class="footer__contacts-email" href="mailto:minimal.com.ua@gmail.com">minimal.com.ua@gmail.com</a>
+                     </div>
+                  </div>   
+                  <ul class="footer__contacts-social">
+                     <li class="footer__contacts-social-item">
+                        <a class="footer__contacts-social-link" href="#">
+                           <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M2.73731 11.4505C12.9488 7.13095 26.1633 1.86455 27.9874 1.13564C32.7722 -0.772173 34.2404 -0.406548 33.5083 3.81845C32.9826 6.85517 31.4657 16.9091 30.2567 23.1669C29.5393 26.8778 27.9297 27.3177 25.3988 25.7122C24.1816 24.9395 18.0383 21.0333 16.705 20.1161C15.4879 19.2802 13.8092 18.2747 15.9144 16.2942C16.6636 15.5888 21.5743 11.0802 25.4004 7.5708C25.9017 7.10986 25.272 6.35283 24.6935 6.72236C19.5366 10.0106 12.3866 14.5747 11.4766 15.1692C10.1018 16.0669 8.7815 16.4786 6.41143 15.8239C4.62068 15.3294 2.87137 14.7395 2.19049 14.5145C-0.431443 13.6489 0.190932 12.5278 2.73731 11.4505Z" fill="#353535"/>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="footer__contacts-social-item">
+                        <a class="footer__contacts-social-link" href="#">
+                           <svg width="23" height="44" viewBox="0 0 23 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M18.7892 7.68882H22.8579V0.87454C22.1559 0.781682 19.7418 0.572754 16.9304 0.572754C11.0641 0.572754 7.04561 4.12097 7.04561 10.6424V16.6442H0.572144V24.262H7.04561V43.4299H14.9824V24.2638H21.194L22.1801 16.646H14.9805V11.3978C14.9824 9.19597 15.5989 7.68882 18.7892 7.68882Z" fill="#353535"/>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="footer__contacts-social-item">
+                        <a class="footer__contacts-social-link" href="#">
+                           <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M7.71875 37.5H31.2812C35.5371 37.5 39 34.1703 39 30.0781V7.42188C39 3.32969 35.5371 0 31.2812 0H7.71875C3.46288 0 0 3.32969 0 7.42188V30.0781C0 34.1703 3.46288 37.5 7.71875 37.5ZM2.4375 7.42188C2.4375 4.62187 4.80675 2.34375 7.71875 2.34375H31.2812C34.1932 2.34375 36.5625 4.62187 36.5625 7.42188V30.0781C36.5625 32.8781 34.1932 35.1562 31.2812 35.1562H7.71875C4.80675 35.1562 2.4375 32.8781 2.4375 30.0781V7.42188Z" fill="#353535"/>
+                                 <path d="M19.5029 28.3291C24.9954 28.3291 29.4642 24.0322 29.4642 18.751C29.4642 13.4697 24.9954 9.17285 19.5029 9.17285C14.0104 9.17285 9.54163 13.4697 9.54163 18.751C9.54163 24.0322 14.0104 28.3291 19.5029 28.3291ZM19.5029 11.5166C23.6515 11.5166 27.0267 14.7619 27.0267 18.751C27.0267 22.74 23.6515 25.9853 19.5029 25.9853C15.3543 25.9853 11.9791 22.74 11.9791 18.751C11.9791 14.7619 15.3543 11.5166 19.5029 11.5166Z" fill="#353535"/>
+                                 <path d="M29.8289 11.5019C31.4311 11.5019 32.6385 10.3457 32.6385 8.81285C32.6385 7.21441 31.3677 6.12378 29.8305 6.12378C28.2282 6.12378 27.0209 7.28003 27.0209 8.81285C27.0209 10.4082 28.2851 11.5019 29.8289 11.5019ZM30.1165 8.55503C30.63 8.99097 29.4584 9.52066 29.4584 8.81441C29.4584 8.39253 30.0548 8.50191 30.1165 8.55503Z" fill="#353535"/>
+                           </svg>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="chris" data-aos="chris-appear" data-aos-anchorPlacement="bottom-bottom" data-aos-offset="0" data-aos-delay="200"data-aos-duration="600">
+               <a class="chris__link" href="https://www.behance.net/chriszhivt4551">Designed by Chris Zhivtsova</a>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <div class="callback">
+      <div class="callback__inner" id="callback">
+         <button class="callback__close">
+            <span class="callback__close-line"></span>
+            <span class="callback__close-line"></span>
+         </button>
+         <h2 class="callback__title title">Мы перезвоним вам сами!</h2>
+         <span class="callback__subtitle">Заполните ваши данные</span>
+         <form class="callback__form">
+            <span>Имя</span>
+            <input class="callback__form-item" type="text" placeholder="Введите ваше имя">
+            <span>Телефон</span>
+            <div class="callback__input-wrap">
+            <span></span>
+               <input class="callback__phone callback__form-item" type="tel" maxlength="10" minlength="10">
+            </div>
+            <button class="callback__submit callback__form-item" type="submit">ОТПРАВИТЬ</button>
+         </form>
+      </div>
+   </div>
+
+
+
+   <script>
+   //Get the button
+   var mybutton = document.getElementById("up");
+   
+   // When the user scrolls down 20px from the top of the document, show the button
+   window.onscroll = function() {scrollFunction()};
+
+   function scrollFunction() {
+     if (document.body.scrollTop > 490 || document.documentElement.scrollTop > 490) {
+       mybutton.style.display = "block";
+     } else {
+       mybutton.style.display = "none";
+     }
+   }
+   </script>
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="js/main.min.js"></script>
+</body>
+</html>
